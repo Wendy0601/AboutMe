@@ -11,8 +11,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/AboutMe' : '',
-  basePath: process.env.NODE_ENV === 'production' ? '/AboutMe' : '',
+  // The following values will work automatically with GitHub Pages
+  basePath: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
 }
 
 export default nextConfig
