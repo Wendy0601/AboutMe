@@ -2,6 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
+  distDir: 'docs', // This creates files in 'docs' folder instead of 'out'
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -11,7 +12,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // The following values will work automatically with GitHub Pages
   basePath: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
   assetPrefix: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
 }
