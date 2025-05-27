@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   trailingSlash: true,
-  distDir: 'docs', // This creates files in 'docs' folder instead of 'out'
+  distDir: 'docs',
   eslint: {
     ignoreDuringBuilds: true,
   },
