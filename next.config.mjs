@@ -12,8 +12,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/wenting-li-portfolio' : '',
+  basePath: process.env.NODE_ENV === 'production' ? '/AboutMe' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/AboutMe' : '',
 }
 
 export default nextConfig
