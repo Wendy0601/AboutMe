@@ -1,5 +1,6 @@
 import Image from "next/image"
 import { Calendar, MapPin } from "lucide-react"
+import { getImagePath } from "@/lib/image-path"
 
 interface ResearchPositionProps {
   title: string
@@ -98,7 +99,7 @@ export default function ResearchPosition({
         <div className="mt-3 md:mt-0 md:w-1/3">
           <div className="overflow-hidden rounded border border-gray-700">
             <Image
-              src={imageSource || "/placeholder.svg"}
+              src={getImagePath(imageSource) || "/placeholder.svg"}
               alt={`Visualization for ${cleanText(project)}`}
               width={250}
               height={150}

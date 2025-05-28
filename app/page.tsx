@@ -126,11 +126,12 @@ export default function Home() {
           <div className="mx-auto flex flex-col space-y-4 md:mx-0">
             <div className="overflow-hidden rounded-lg border-2 border-academic-blue shadow-lg transition-transform hover:scale-[1.02]">
               <Image
-                src="/images/me_sport.jpg"
+                src="/AboutMe/images/me_sport.jpg"
                 alt="Wenting Li"
                 width={300}
                 height={400}
                 className="h-auto w-full object-cover"
+                priority
               />
             </div>
 

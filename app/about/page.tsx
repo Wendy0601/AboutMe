@@ -74,22 +74,22 @@ export default function AboutPage() {
           <ImageGallery
             images={[
               {
-                src: "/images/me_sport.jpg",
+                src: "/AboutMe/images/me_sport.jpg",
                 alt: "Sandboarding on dunes",
                 caption: "Exploring the physics of motion while sandboarding in the dunes",
               },
               {
-                src: "/images/hiking_highest.jpeg",
+                src: "/AboutMe/images/hiking_highest.jpeg",
                 alt: "Mountain summit with research team",
                 caption: "Reaching new heights with my research team at the mountain summit",
               },
               {
-                src: "/images/riding.jpeg",
+                src: "/AboutMe/images/riding.jpeg",
                 alt: "Cycling with colleagues",
                 caption: "Weekend cycling expedition with fellow researchers",
               },
               {
-                src: "/images/hiking_stone.jpeg",
+                src: "/AboutMe/images/hiking_stone.jpeg",
                 alt: "Exploring unique geological formations",
                 caption: "Investigating natural patterns at a fascinating geological site",
               },

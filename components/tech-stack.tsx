@@ -1,7 +1,6 @@
 "use client"
 
 import { useState } from "react"
-import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { TensorflowLogo, PytorchLogo, PythonLogo, MatlabLogo, CppLogo, GitLogo } from "./tech-logos"
 
@@ -56,12 +55,10 @@ export default function TechStack() {
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
         {techStacks[activeTab as keyof typeof techStacks].map((tech, index) => (
-          <motion.div
+          <div
             key={tech.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.3, delay: index * 0.1 }}
-            className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm"
+            className="rounded-lg border border-gray-200 bg-white p-4 shadow-sm transition-all duration-300 hover:shadow-md"
+            style={{ animationDelay: `${index * 0.1}s` }}
           >
             <div className="mb-3 flex items-center gap-3">
               {tech.icon || (
@@ -72,15 +69,13 @@ export default function TechStack() {
               <h3 className="text-lg font-medium text-dark-gray">{tech.name}</h3>
             </div>
             <div className="h-2 w-full overflow-hidden rounded-full bg-gray-200">
-              <motion.div
-                initial={{ width: 0 }}
-                animate={{ width: `${tech.level}%` }}
-                transition={{ duration: 0.8, delay: 0.2 }}
-                className="h-full bg-academic-blue"
+              <div
+                className="h-full bg-academic-blue transition-all duration-800"
+                style={{ width: `${tech.level}%` }}
               />
             </div>
             <div className="mt-1 text-right text-xs text-medium-gray">Proficiency: {tech.level}%</div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

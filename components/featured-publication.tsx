@@ -51,7 +51,7 @@ export default function FeaturedPublication() {
 
           <div className="relative mb-6 h-64 w-full rounded overflow-hidden border border-gray-200">
             <Image
-              src="/images/verification_diagram.png"
+              src="/AboutMe/images/verification_diagram.png"
               alt="Neural network verification diagram"
               fill
               className="object-contain p-2"

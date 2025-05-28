@@ -3,6 +3,7 @@
 import Image from "next/image"
 import { useState } from "react"
 import { ZoomIn } from "lucide-react"
+import { getImagePath } from "@/lib/image-path"
 
 interface ImageGalleryProps {
   images: {
@@ -37,7 +38,7 @@ export default function ImageGallery({ images }: ImageGalleryProps) {
           >
             <div className="relative aspect-square">
               <Image
-                src={image.src || "/placeholder.svg"}
+                src={getImagePath(image.src) || "/placeholder.svg"}
                 alt={image.alt}
                 fill
                 className="object-cover transition-transform duration-300 group-hover:scale-105"
